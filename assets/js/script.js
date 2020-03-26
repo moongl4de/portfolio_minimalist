@@ -2,7 +2,7 @@ let container = document.getElementById("main")
 let text = new Blotter.Text("//alexgignilliat", {
     family: "sans-serif",
     size: 115,
-    fill: "#1a0000",
+    fill: "#000",
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: 0,

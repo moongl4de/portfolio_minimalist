@@ -83,7 +83,7 @@ canvas {
 
 a {
     margin: 0 25px;
-    color: black;
+    color: rgba(97, 97, 97, 0.651);
     letter-spacing: 8px;;
 }
 
@@ -213,6 +213,7 @@ section {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     
+    
 }
 
 .form-control {
@@ -226,6 +227,7 @@ section {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     
+    
 }
 
 .btn {
@@ -237,6 +239,17 @@ section {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     outline: none;
+   
+}
+
+label {
+    color: rgba(71, 71, 71, 0.651);
+    letter-spacing: 8px;
+}
+
+label:hover {
+    color: rgb(168, 0, 0);
+    transition-duration: 1s;
 }
 
 .btn:hover {
@@ -261,6 +274,8 @@ h5:hover{
 textarea {
     resize: none;
 }
+
+
 
 
 
