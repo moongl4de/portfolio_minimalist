@@ -88,9 +88,15 @@ a {
 }
 
 a:hover {
-    text-shadow: 0px 0px 5px black;
-    color: white;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.747);
+    color: rgb(168, 0, 0);
     text-decoration: none;
+    transition-duration: 1s;
+}
+
+::selection {
+    color: none;
+    background: none;
 }
 
 #links {
@@ -106,6 +112,11 @@ a:hover {
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 #nameBlotter {
@@ -153,6 +164,7 @@ a:hover {
     position: relative;
     z-index: 10000;
     max-height: 450px;
+    
 }
 
 img {
@@ -162,6 +174,7 @@ img {
     filter: saturate(.8)
     opacity(.5);
     z-index: 10000;
+    object-fit: cover;
 }
 
 img:hover {
@@ -198,6 +211,7 @@ section {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .form-control {
@@ -210,6 +224,7 @@ section {
     box-shadow: none !important;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    
 }
 
 .btn {
@@ -225,13 +240,25 @@ section {
 
 .btn:hover {
     background-color: white;
-    border: 1px black solid;
-    color: black;
+    border: 1px rgb(128, 128, 128) solid;
+    color: rgb(168, 0, 0);
+    transition-duration: 1s;
     border-radius: 0;
+    transition-duration: 1s;
 }
 
-h3 {
+h5 {
     margin: 10px;
+    letter-spacing: 10px;
+}
+
+h5:hover{
+    color: rgb(168, 0, 0);
+    transition-duration: 1s;
+}
+
+textarea {
+    resize: none;
 }
 
 

@@ -2,7 +2,7 @@ let container = document.getElementById("main")
 let text = new Blotter.Text("//alexgignilliat", {
     family: "sans-serif",
     size: 110,
-    fill: "#000",
+    fill: "#1a0000",
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: 0,
@@ -10,9 +10,9 @@ let text = new Blotter.Text("//alexgignilliat", {
 });
 
 let material = new Blotter.FliesMaterial();
-material.uniforms.uPointCellWidth.value = .01;
-material.uniforms.uPointRadius.value = 66;
-material.uniforms.uSpeed.value = 3;
+material.uniforms.uPointCellWidth.value = .012;
+material.uniforms.uPointRadius.value = 5;
+material.uniforms.uSpeed.value = 2;
 
 let blotter = new Blotter(material, {
     texts: text
@@ -24,10 +24,10 @@ scope.appendTo(container);
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 1250,
+            "value": 80,
             "density": {
                 "enable": true,
-                "value_area": 10000
+                "value_area": 1000
             }
         },
         "color": {
@@ -70,7 +70,7 @@ particlesJS("particles-js", {
         },
         "line_linked": {
             "enable": true,
-            "distance": 100,
+            "distance": 150,
             "color": "#666",
             "opacity": 0.5,
             "width": 1
@@ -118,7 +118,7 @@ particlesJS("particles-js", {
                 "speed": 3
             },
             "repulse": {
-                "distance": 150,
+                "distance": 250,
                 "duration": 1
             },
             "push": {
