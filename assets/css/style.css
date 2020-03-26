@@ -1,0 +1,228 @@
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0); 
+  }
+  
+canvas {
+    display: block;
+    vertical-align: bottom;
+    
+  }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6e6e6e;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #particles-js {
+    background-color: #f7f7f7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+#stickyRow {
+    position: sticky;
+    top: 0px;
+    margin-top: 13%;
+    width: 100%;
+    z-index: 999;
+}
+
+#main {
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+#linkRow {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25%;
+    text-align: center;
+}
+
+a {
+    margin: 0 25px;
+    color: black;
+    letter-spacing: 8px;;
+}
+
+a:hover {
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    text-decoration: none;
+}
+
+#links {
+    margin: 0 auto;
+    position: sticky;
+    top: 13%;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.links {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nameBlotter {
+    margin-top: 33vh;
+    position: sticky;
+    top: 0;
+}
+
+#portfolio {
+    margin: 0 auto;
+    width: 100%;
+    height: 105vh;
+    z-index: 9999;
+    overflow: auto;
+    background-color: rgba(238, 130, 238, 0.623);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    padding-right: 65px;
+}
+
+.portText {
+    position: relative;
+    left: 15px
+}
+
+.portfolioInner {
+    margin: 0 auto;
+}
+
+.projects {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.examples {
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    max-height: 450px;
+}
+
+img {
+    border-radius: 180px;
+    height: 200px;
+    width: 200px;
+    filter: saturate(.8)
+    opacity(.5);
+    z-index: 10000;
+}
+
+img:hover {
+    filter: opacity(1);
+}
+
+#contact {
+    margin: 0 auto;
+    width: 100%;
+    height: 105vh;
+    z-index: 2147483647;
+    background-color: rgb(255, 0, 255);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    padding-right: 65px;
+}
+
+.navbuttons {
+    background-color: rgba(255, 255, 255, 0.041);
+    border: 1px rgb(255, 255, 255) solid;
+    margin: 4px;
+}
+
+.navbuttons:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+}
+
+section {
+    margin: 0 auto;
+    margin-top: 200px;
+    z-index: 12000;
+    padding-bottom: 500px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control {
+    border-radius: 0px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(52, 48, 77, 0.5);
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgba(78, 78, 78, 0.37);
+    border: 1px black solid;
+    border-radius: 0;
+    width: 100px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+    border-radius: 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+
+
+
+
