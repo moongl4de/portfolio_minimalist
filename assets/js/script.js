@@ -1,7 +1,7 @@
 let container = document.getElementById("main")
 let text = new Blotter.Text("//alexgignilliat", {
     family: "sans-serif",
-    size: 110,
+    size: 115,
     fill: "#1a0000",
     paddingLeft: 0,
     paddingRight: 0,
@@ -10,8 +10,8 @@ let text = new Blotter.Text("//alexgignilliat", {
 });
 
 let material = new Blotter.FliesMaterial();
-material.uniforms.uPointCellWidth.value = .012;
-material.uniforms.uPointRadius.value = 5;
+material.uniforms.uPointCellWidth.value = .01;
+material.uniforms.uPointRadius.value = 1;
 material.uniforms.uSpeed.value = 2;
 
 let blotter = new Blotter(material, {

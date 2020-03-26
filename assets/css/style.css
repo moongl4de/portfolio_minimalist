@@ -179,6 +179,7 @@ img {
 
 img:hover {
     filter: opacity(1);
+    transition-duration: 4s;
 }
 
 #contact {
