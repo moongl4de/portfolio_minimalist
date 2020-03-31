@@ -28,64 +28,45 @@
 
 <body>
     <div id="particles-js"></div>
-    <div class="container-fluid">
-        <div class="row d-inline-flex justify-content-center" id="stickyRow">
-            <div id="main"></div>
+    <div class="container">
+        <div class="row d-inline-flex justify-content-center col-12" id="stickyRow">
+            <!-- <div id="main" class="col-12"></div> -->
+            <div class="typewriter">
+                <h1>//alexgignilliat <hr> </h1>
+              </div>
+              
+              
+              
             <div class="row d-flex justify-content-center" id="linkRow">
                 <a href="#">Home</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
-        <div class="row" id="portfolio">
-            <div class="projects col-12 d-inline-flex justify-content-center">
-                <div class="row">
-                    <div class="examples col-2">
-                        <a target="_blank" href="https://tranquil-gorge-75452.herokuapp.com/">
-                            <img src="assets/images/burger.png">
-                            <p class="portText">Burger App</p>
-                        </a>
-                    </div>
-                    <div class="examples col-2">
-                        <a target="_blank" href="https://google.com">
-                            <img src="assets/images/dayplannerss.png">
-                            <p class="portText">Day Planner</p>
-                        </a>
-                    </div>
-                    <div class="examples col-2">
-                        <a target="_blank" href="https://google.com">
-                            <img src="assets/images/stonksSS.png">
-                            <p class="portText">Stonks</p>
-                        </a>
-                    </div>
-                    <div class="examples col-2">
-                        <a target="_blank" href="https://alexgignilliat.github.io/Digital-Asset-Monitor/">
-                            <img src="assets/images/DAM.png">
-                            <p class="portText">Digital Asset Monitor</p>
-                        </a>
-                    </div>
-                    <div class="examples col-2">
-                        <a target="_blank" href="https://alexgignilliat.github.io/Weather-Dashboard/">
-                            <img src="assets/images/weather.png">
-                            <p class="portText">Weather Dashboard</p>
-                        </a>
-                    </div>
-                    <div class="examples col-2">
-                        <a target="_blank" href="https://the-best-note-taker-ever.herokuapp.com/">
-                            <img src="assets/images/notes.png">
-                            <p class="portText">Note Taker</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+        <div id="portfolio">
+        <div class="row containerPort">
+            
+            <img class="col-sm-4 mx-auto" src="assets/images/burger.png">
+            <img class="col-sm-4 mx-auto" src="assets/images/dayplannerss.png">
+            <img class="col-sm-4 mx-auto" src="assets/images/stonksSS.png">
+            <div class="row">
+            <img class="col-sm-4 mx-auto" src="assets/images/DAM.png">
+            <img class="col-sm-4 mx-auto" src="assets/images/weather.png">
+            <img class="col-sm-4 mx-auto" src="assets/images/notes.png">
         </div>
-        <div class="row" id="contact">
-            <div class="projects col-12 d-flex justify-content-center" style="background-color: rgba(138, 138, 138, 0.253); margin-top: 65px;padding: 0; height: 400px; max-width: 40%; border: 1px rgba(29, 29, 29, 0.185) solid">
+        </div>
+        </div>
+        
+      
+
+        <div class="row mx-auto" id="contact">
+            <div class="projects col-12 d-flex justify-content-center" style="background-color: rgba(138, 138, 138, 0.253); margin-top: 65px;padding: 0; height: 400px; max-width: 60%; border: 1px rgba(29, 29, 29, 0.185) solid">
                 <div class="row">
-                <div class="form-box" style="z-index: 13333;">
+                <div class="form-box mx-auto" style="z-index: 13333;">
                     <h5><strong>Let's build something.</strong></h5>
                     <hr>
-                    <form action="https://formspree.io/mbjodlrz"
+                    <form class="mx-auto" action="https://formspree.io/mbjodlrz"
                     method="POST">
                       <div class="form-group">
                         <label for="name">Name</label>
@@ -106,7 +87,10 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <a href="google.com" target="_blank">Github</a>|<a href="google.com" target="_blank">Resume</a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 </body>

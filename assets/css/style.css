@@ -3,9 +3,9 @@ html, body {
     margin: 0;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    animation: fadeInAnimation ease 8s;
+    /* animation: fadeInAnimation ease 8s;
     animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;  */
 }
 
 @keyframes fadeInAnimation { 
@@ -61,7 +61,7 @@ canvas {
 #stickyRow {
     position: sticky;
     top: 0px;
-    margin-top: 13%;
+    margin-top: 25%;
     width: 100%;
     z-index: 999;
 }
@@ -125,18 +125,7 @@ a:hover {
     top: 0;
 }
 
-#portfolio {
-    margin: 0 auto;
-    width: 100%;
-    height: 105vh;
-    z-index: 9999;
-    overflow: auto;
-    background-color: rgba(238, 130, 238, 0.623);
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    padding-right: 65px;
-}
+
 
 .portText {
     position: relative;
@@ -146,6 +135,10 @@ a:hover {
 .portfolioInner {
     margin: 0 auto;
 }
+
+div.imagetiles div.col-lg-3.col-md-3.col-sm-3.col-xs-6{
+    padding: 0px;
+  }
 
 .projects {
     width: 100%;
@@ -164,18 +157,12 @@ a:hover {
     position: relative;
     z-index: 10000;
     max-height: 450px;
+    margin: 0 10%;
+    height: 200px;
     
 }
 
-img {
-    border-radius: 180px;
-    height: 200px;
-    width: 200px;
-    filter: saturate(.8)
-    opacity(.5);
-    z-index: 10000;
-    object-fit: cover;
-}
+
 
 img:hover {
     filter: opacity(1);
@@ -188,10 +175,13 @@ img:hover {
     height: 105vh;
     z-index: 2147483647;
     background-color: rgb(255, 0, 255);
-    margin-bottom: 100px;
+    padding-bottom: 13%;
     display: flex;
     justify-content: center;
     padding-right: 65px;
+    margin-top: 10%;
+    padding-top: 5%;
+
 }
 
 .navbuttons {
@@ -226,8 +216,6 @@ section {
     box-shadow: none !important;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    
-    
 }
 
 .btn {
@@ -239,7 +227,6 @@ section {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     outline: none;
-   
 }
 
 label {
@@ -254,9 +241,9 @@ label:hover {
 
 .btn:hover {
     background-color: white;
-    border: 1px rgb(128, 128, 128) solid;
+    border: 1px rgb(255, 255, 255) solid;
     color: rgb(168, 0, 0);
-    transition-duration: 1s;
+    transition-duration: 1s; 
     border-radius: 0;
     transition-duration: 1s;
 }
@@ -275,9 +262,68 @@ textarea {
     resize: none;
 }
 
+img {
+    border-radius: 0px;
+    max-height: 200px;
+    max-width: 200px;
+    width: 200px;
+    z-index: 100000;
+    margin-top: 50px;
+    object-fit: cover;
+    
+
+}
+
+.containerPort {
+   
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding-top: 15%;
+    
+}
+
+#portfolio {
+    background-color: red;
+    margin-top: 1000px
+}
 
 
 
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    color: rgba(0, 0, 0, 0.582);
+    border-right: .03em solid rgba(0, 0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    
+    animation:
+      typing .2s steps(40, end),
+      blink-caret .75s step-end infinite;
+      font-family: 'Montserrat', sans-serif;
+      animation-delay: 2s;
+  }
 
-
-
+  footer {
+      width: 100%;
+      height: 45px;
+      background-color: rgba(185, 185, 185, 0.459);
+      z-index: 999999;
+      position: sticky;
+      bottom: 0;
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(0, 0, 0, 0); }
+  }
