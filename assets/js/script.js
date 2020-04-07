@@ -167,3 +167,5 @@ particlesJS("particles-js", {
 //     delay: 1000
 //   });
 
+alert("Portfolio overhaul in progress - Pardon our dust.")
+
