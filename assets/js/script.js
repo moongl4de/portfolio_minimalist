@@ -1,3 +1,5 @@
+
+
 // let container = document.getElementById("main")
 // let text = new Blotter.Text("//alexgignilliat", {
 //     family: "Montserrat",
@@ -134,6 +136,8 @@ particlesJS("particles-js", {
 
 
 
+
+
 // // Wrap every letter in a span
 // var textWrapper = document.querySelector('.ml11 .letters');
 // textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
@@ -167,5 +171,7 @@ particlesJS("particles-js", {
 //     delay: 1000
 //   });
 
+
+var _0x5385=['I\x27m\x20currently\x20in\x20the\x20process\x20of\x20overhauling\x20it\x20so\x20certain\x20elements\x20may\x20temporarily\x20display\x20incorrectly.','Thanks\x20for\x20checking\x20out\x20my\x20portfolio.','log','In\x20the\x20meantime,\x20head\x20over\x20to\x20my\x20Github\x20to\x20see\x20what\x20I\x27m\x20working\x20on!','/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////'];(function(_0x14411d,_0x5385b4){var _0x5e1b53=function(_0xef7a90){while(--_0xef7a90){_0x14411d['push'](_0x14411d['shift']());}};_0x5e1b53(++_0x5385b4);}(_0x5385,0xb9));var _0x5e1b=function(_0x14411d,_0x5385b4){_0x14411d=_0x14411d-0x0;var _0x5e1b53=_0x5385[_0x14411d];return _0x5e1b53;};console[_0x5e1b('0x2')](_0x5e1b('0x4'));console['log'](_0x5e1b('0x1'));console[_0x5e1b('0x2')](_0x5e1b('0x0'));console['log'](_0x5e1b('0x3'));console[_0x5e1b('0x2')](_0x5e1b('0x4'));
 alert("Portfolio overhaul in progress - Pardon our dust.")
 
