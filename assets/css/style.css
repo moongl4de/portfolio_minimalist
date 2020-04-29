@@ -187,11 +187,12 @@ ul {
   justify-content: center;
 }
 
-.fab{
+.fab, .fas{
   margin: 5px;
+  color: rgba(32, 32, 32, 0.596);
 }
 
-#linkedIn:hover, #github:hover{
+#linkedIn:hover, #github:hover, #resume:hover{
   background: -webkit-gradient(linear, right top, left bottom, from(rgb(0, 132, 255)), to(rgb(255, 0, 212)));
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
