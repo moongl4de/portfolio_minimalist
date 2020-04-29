@@ -1,331 +1,245 @@
 html, body {
     scroll-behavior: smooth;
     margin: 0;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    /* animation: fadeInAnimation ease 8s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards;  */
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;    
 }
-
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-     } 
-    }
 
 ::-webkit-scrollbar {
     width: 3px;
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
     border-radius: 10px;
-  }
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0); 
-  }
+}
   
-canvas {
-    display: block;
-    vertical-align: bottom;
-    
-  }
-
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #6e6e6e;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
   
-  #particles-js {
-    background-color: #f7f7f7;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-#stickyRow {
-    position: sticky;
-    top: 0px;
-    margin-top: 25%;
-    width: 100%;
-    z-index: 999;
+#particles-js {
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
-#main {
-    margin: 0 auto;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    z-index: 999;
+#nameHeader {
+  background-color: rgba(255, 0, 0, 0);
+  color: rgb(65, 65, 65);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 45px;
+  position: sticky;
+  top: 0;
+  margin-top: 15%;
+  width: 100%;
 }
 
-#linkRow {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 25%;
-    text-align: center;
+h1 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.233);
 }
 
-a {
-    margin: 0 25px;
-    color: rgba(97, 97, 97, 0.651);
-    letter-spacing: 8px;;
+h1:hover {
+  color: white;
+  transition: ease-out .3s;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.534);
 }
 
-a:hover {
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.747);
-    color: rgb(168, 0, 0);
-    text-decoration: none;
-    transition-duration: 1s;
+#navRow {
+  text-align: center;
+  position: sticky;
+  top: 2rem;
 }
 
-::selection {
-    color: none;
-    background: none;
+.navButtons {
+  font-size: 18px;
+  position: relative;
+  color: rgb(255, 255, 255);
 }
 
-#links {
-    margin: 0 auto;
-    position: sticky;
-    top: 13%;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
+.navButtons:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: ease-out .3s;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.534);
 }
 
-.links {
-    margin: 0 auto;
-    text-align: center;
-    text-decoration: none;
-    user-select: none; /* supported by Chrome and Opera */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+#skillsRow, #portfolioRow {   
+  display: flex;
+  justify-content: center;
 }
 
-#nameBlotter {
-    margin-top: 33vh;
-    position: sticky;
-    top: 0;
+#skillContain { 
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.336);
+  height: 25rem;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-
-
-.portText {
-    position: relative;
-    left: 15px
+#portfolioRow {
+  margin: 0 auto;
 }
 
-.portfolioInner {
-    margin: 0 auto;
+#contactRow {
+  padding: 10%;
 }
 
-div.imagetiles div.col-lg-3.col-md-3.col-sm-3.col-xs-6{
-    padding: 0px;
-  }
+#top {
+  width: 100%;
+  background-color: rgb(141, 141, 141);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.466);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  margin-bottom: 50%;
+}
 
 .projects {
-    width: 100%;
-    height: 600px;
-    background-color: rgba(255, 255, 255, 0);
-    position: relative;
-    top: 25%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 100px;
+  background-color: red;
+  width: 100%;
 }
 
-.examples {
-    text-align: center;
-    position: relative;
-    z-index: 10000;
-    max-height: 450px;
-    margin: 0 10%;
-    height: 200px;
-    
+ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
-
-
-img:hover {
-    filter: opacity(1);
-    transition-duration: 4s;
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
+  width: 25rem !important
 }
 
-#contact {
-    margin: 0 auto;
-    width: 100%;
-    height: 105vh;
-    z-index: 2147483647;
-    background-color: rgb(255, 0, 255);
-    padding-bottom: 13%;
-    display: flex;
-    justify-content: center;
-    padding-right: 65px;
-    margin-top: 10%;
-    padding-top: 5%;
-
+.card:hover {
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.596);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
-.navbuttons {
-    background-color: rgba(255, 255, 255, 0.041);
-    border: 1px rgb(255, 255, 255) solid;
-    margin: 4px;
+.card-body {
+  background-color: rgba(0, 0, 0, 0.842); 
+  border: 1px white solid
 }
 
-.navbuttons:hover {
-    background-color: rgba(255, 255, 255, 0.151);
+#dayPlanner {
+  background-image: url("../images/dayplannerss.png");
+  background-size: cover;
+  background-position: center;
 }
 
-section {
-    margin: 0 auto;
-    margin-top: 200px;
-    z-index: 12000;
-    padding-bottom: 500px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    
-    
+#weatherDashboard {
+  background-image: url("../images/weather.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.form-control {
-    border-radius: 0px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(52, 48, 77, 0.5);
-    outline: none;
-    border: none !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+#stonks {
+  background-image: url("../images/stonksSS.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#digitalAssetMonitor {
+  background-image: url("../images/DAM.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#noteTaker{
+  background-image: url("../images/notes.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#burgerApp {
+  background-image: url("../images/burger.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .btn {
-    background-color: rgba(78, 78, 78, 0.37);
-    border: 1px black solid;
-    border-radius: 0;
-    width: 100px;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: none;
+  border-radius: 0px;;
 }
 
-label {
-    color: rgba(71, 71, 71, 0.651);
-    letter-spacing: 8px;
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-label:hover {
-    color: rgb(168, 0, 0);
-    transition-duration: 1s;
+.fab{
+  margin: 5px;
 }
 
-.btn:hover {
-    background-color: white;
-    border: 1px rgb(255, 255, 255) solid;
-    color: rgb(168, 0, 0);
-    transition-duration: 1s; 
-    border-radius: 0;
-    transition-duration: 1s;
+#linkedIn:hover, #github:hover{
+  background: -webkit-gradient(linear, right top, left bottom, from(rgb(0, 132, 255)), to(rgb(255, 0, 212)));
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 3s;
+  transition-duration: 5s;
+  cursor: pointer;
 }
 
-h5 {
-    margin: 10px;
-    letter-spacing: 10px;
+.form-control {
+  outline: none;
+  margin: 0 auto;
 }
 
-h5:hover{
-    color: rgb(168, 0, 0);
-    transition-duration: 1s;
+#button:hover {
+  background-color: rgb(2, 0, 36);
+  transition: 1s;
 }
 
-textarea {
-    resize: none;
+#topQuote {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 30px;
 }
 
-img {
-    border-radius: 0px;
-    max-height: 200px;
-    max-width: 200px;
-    width: 200px;
-    z-index: 100000;
-    margin-top: 50px;
-    object-fit: cover;
-    
-
-}
-
-.containerPort {
-   
-    display: flex;
-    justify-content: space-between;
-    background-color: red;
-    padding-top: 15%;
-    
-}
-
-#portfolio {
-    background-color: red;
-    margin-top: 1000px
-}
-
-
-
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    color: rgba(0, 0, 0, 0.582);
-    border-right: .03em solid rgba(0, 0, 0, 0); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    
-    animation:
-      typing .2s steps(40, end),
-      blink-caret .75s step-end infinite;
-      font-family: 'Montserrat', sans-serif;
-      animation-delay: 2s;
+@media only screen and (max-width: 400px) {
+  #skillRow, #portfolioRow, #contactRow {
+    margin-top: 50%
   }
+}
 
-  footer {
-      width: 80%;
-      height: 45px;
-      background-color: rgba(185, 185, 185, 0.178);
-      z-index: 999999;
-      position: sticky;
-      bottom: 0;
-      text-align: center;
-      padding: 10px 0;
-      margin: 0 auto;
-      border: 1px solid rgba(0, 0, 0, 0.116);
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgba(0, 0, 0, 0); }
-  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
