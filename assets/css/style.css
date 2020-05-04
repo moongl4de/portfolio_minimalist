@@ -2,7 +2,8 @@ html, body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif; 
+    
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +70,7 @@ h1:hover {
 .navButtons {
   font-size: 18px;
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .navButtons:hover{
@@ -104,7 +105,7 @@ h1:hover {
 
 #top {
   width: 100%;
-  background-color: rgb(141, 141, 141);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.466);
   position: sticky;
   top: 0;
@@ -218,9 +219,25 @@ ul {
   font-size: 30px;
 }
 
-@media only screen and (max-width: 400px) {
+
+
+@media only screen and (max-width: 500px) {
   #skillRow, #portfolioRow, #contactRow {
     margin-top: 50%
+  }
+  #build {
+    margin-top: 15%;
+  }
+
+  #top {
+    margin: 50% auto 80% auto;
+  }
+
+  .card {
+    max-height: 250px;
+    max-width: 250px;
+    font-size: 12px;
+    padding: 0;
   }
 }
 
