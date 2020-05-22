@@ -223,11 +223,33 @@ ul {
   font-size: 30px;
 }
 
+#containerPort {
+  margin-top: 20%;
+  padding-top: 20%
+}
+
+#portBreak {
+  margin: 10%;
+}
+
+
 
 
 @media only screen and (max-width: 500px) {
-  #skillRow, #portfolioRow, #contactRow {
-    margin-top: 50%
+  #skillsRow, #portfolioRow, #contactRow {
+    margin-top: 100vh;
+  }
+
+  #skillsRow {
+    padding-top: 20%;
+  }
+
+  #portBreak {
+    padding-top: 14%;
+  }
+
+  #contactRow {
+    padding-top: 40%;
   }
   #build {
     margin-top: 15%;
